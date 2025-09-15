@@ -113,7 +113,7 @@ async function showInterstitialAd(){ try{ await CG?.ad?.requestAd?.('midgame'); 
 async function showRewardAd(){ try{ await CG?.ad?.requestAd?.('rewarded'); return true; }catch(_){ return false; } }
 
 /* =================== Splash =================== */
-const SPLASH_IMG_URL = "./assets/splash.png"; // حط الصورة دي داخل مجلد assets
+const SPLASH_IMG_URL = "./splash.png";
 const splash = document.getElementById('splash');
 const splashImg = document.getElementById('splashImg');
 function hideSplash(){ splash.classList.add('hide'); setTimeout(()=> splash.style.display='none', 400); }
@@ -294,3 +294,4 @@ window.addEventListener('load', () => {
 </script>
 </body>
 </html>
+
